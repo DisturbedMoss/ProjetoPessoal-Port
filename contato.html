@@ -16,21 +16,23 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contato.html">Contato</a></li>
+                <li><a href="mangasfavoritos.html">Recomendação de mangás</a></li>
             </ul>
         </nav>
     </header>
-
+    <!-- div -> section -> article; conteudo principal, seção dentro do principal, artigos dentro das seções -->
     <main>
         <main>
-            <form action="#" method="submit" id="formulario">
-                <label for="nome">Nome: </label>
+            <!-- "get" envia dados pela URL (consultas); "post" envia no corpo da requisição (dados sensíveis/cadastros). -->
+            <form action="#" method="" id="formulario">
+                <label for="name">Nome: </label>
                 <input id="name" type="text" name="name" placeholder="Digite seu nome">
                 <span id="errNome"></span>
-                
+
                 <label for="email">Email: </label>
                 <input id="email" type="text" name="email" placeholder="Digite seu email">
                 <span id="errEmail"></span>
-                
+
                 <label for="subject">Assunto: </label>
                 <input id="subject" type="text" name="subject" placeholder="Digite o assunto da mensagem">
                 <span id="errSubject"></span>
@@ -38,6 +40,7 @@
                 <label for="message">mensagem: </label>
                 <textarea name="message" id="message" placeholder="Digite sua mensagem"></textarea>
 
+                <!-- type button - para botoes sem função específica; type submit - para enviar formularios; type reset - para apagar todo o formulario -->
                 <button type="submit">Enviar</button>
             </form>
             <article>
@@ -60,13 +63,13 @@
     </main>
     
     <footer>
-        <a href="">
+        <a href="https://www.linkedin.com/in/vitor-hugo-silva-7b6b14220">
             <img src="assets/img/linkedin.svg" alt="Linkedin">
         </a>
-        <a href="">
+        <a href="https://github.com/disturbedmoss">
             <img src="assets/img/github.svg" alt="Github">
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/">
             <img src="assets/img/instagram.svg" alt="instagram">
         </a>
 
