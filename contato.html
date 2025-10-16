@@ -7,7 +7,10 @@
     <meta name="author" content="Vitor Hugo">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
+
     <title>Contato</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header>
@@ -21,57 +24,57 @@
         </nav>
     </header>
     <!-- div -> section -> article; conteudo principal, seção dentro do principal, artigos dentro das seções -->
-    <main>
-        <main>
-            <!-- "get" envia dados pela URL (consultas); "post" envia no corpo da requisição (dados sensíveis/cadastros). -->
-            <form action="#" method="" id="formulario">
-                <label for="name">Nome: </label>
-                <input id="name" type="text" name="name" placeholder="Digite seu nome">
-                <span id="errNome"></span>
+    <main class="main_contato">
+        <!-- "get" envia dados pela URL (consultas); "post" envia no corpo da requisição (dados sensíveis/cadastros). -->
+        <form action="#" method="" id="formulario">
+            <label for="name">Nome: </label>
+            <input id="name" type="text" name="name" placeholder="Digite seu nome">
+            <span id="errNome"></span>
 
-                <label for="email">Email: </label>
-                <input id="email" type="text" name="email" placeholder="Digite seu email">
-                <span id="errEmail"></span>
+            <label for="email">Email: </label>
+            <input id="email" type="text" name="email" placeholder="Digite seu email">
+            <span id="errEmail"></span>
 
-                <label for="subject">Assunto: </label>
-                <input id="subject" type="text" name="subject" placeholder="Digite o assunto da mensagem">
-                <span id="errSubject"></span>
+            <label for="subject">Assunto: </label>
+            <input id="subject" type="text" name="subject" placeholder="Digite o assunto da mensagem">
+            <span id="errSubject"></span>
 
-                <label for="message">mensagem: </label>
-                <textarea name="message" id="message" placeholder="Digite sua mensagem"></textarea>
+            <label for="message">mensagem: </label>
+            <textarea name="message" id="message" placeholder="Digite sua mensagem"></textarea>
 
-                <!-- type button - para botoes sem função específica; type submit - para enviar formularios; type reset - para apagar todo o formulario -->
-                <button type="submit">Enviar</button>
-            </form>
-            <article>
-                <address>
-                    <p>Corcovado - Alto da Boa Vista,</p>
-                    <p>Rio de Janeiro - RJ, 22461</p>
-                </address>
+            <!-- type button - para botoes sem função específica; type submit - para enviar formularios; type reset - para apagar todo o formulario -->
+            <button type="submit">Enviar</button>
+        </form>
+        <article class="article_mapa">
+            <address>
+                <p>Corcovado - Alto da Boa Vista,</p>
+                <p>Rio de Janeiro - RJ, 22461</p>
+            </address>
 
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14695.771427411883!2d-43.221746459317764!3d-22.952331508557897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa2af13ff01eb9f%3A0x8cf70199d061b749!2sCorcovado!5e0!3m2!1spt-BR!2sbr!4v1760460594985!5m2!1spt-BR!2sbr"
-                    width="600"
-                    height="450"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-            </article>
-        </main>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14695.771427411883!2d-43.221746459317764!3d-22.952331508557897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa2af13ff01eb9f%3A0x8cf70199d061b749!2sCorcovado!5e0!3m2!1spt-BR!2sbr!4v1760460594985!5m2!1spt-BR!2sbr"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+        </article>
     </main>
     
     <footer>
-        <a href="https://www.linkedin.com/in/vitor-hugo-silva-7b6b14220">
+        <section>
+            <a href="https://www.linkedin.com/in/vitor-hugo-silva-7b6b14220">
             <img src="assets/img/linkedin.svg" alt="Linkedin">
-        </a>
-        <a href="https://github.com/disturbedmoss">
-            <img src="assets/img/github.svg" alt="Github">
-        </a>
-        <a href="https://www.instagram.com/">
-            <img src="assets/img/instagram.svg" alt="instagram">
-        </a>
+            </a>
+            <a href="https://github.com/disturbedmoss">
+                <img src="assets/img/github.svg" alt="Github">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="assets/img/instagram.svg" alt="instagram">
+            </a>
+        </section>
 
         <h3>
             Feito com ❤ por Vitor Hugo - 2025
