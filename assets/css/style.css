@@ -83,7 +83,13 @@ nav a:hover{
 }
 #video figure{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+#video iframe{
+    width: 90%;
+    aspect-ratio: 16/9;
 }
 footer{
     flex-direction: column;
@@ -181,4 +187,57 @@ form span{
 }
 .article_mapa iframe{
     align-self: center;
+    width: 90%;
+    aspect-ratio: 16/9;
+}
+
+/* Mangás */
+
+.main_mangas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 2rem auto;
+}
+.main_mangas div{
+    display: flex;
+}
+.div_mangas{
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+.div_recomende{
+    flex-direction: column;
+    align-items: center;
+}
+.div_mangas img{
+    border-radius: 2%;
+    aspect-ratio: 3/4;
+}
+.div_mangas img:hover{
+    box-shadow: 0px 0px 10px var(--white);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    #about article{
+        flex-direction: column;
+    }
+    .main_contato{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        width: 90%;
+        margin: 2rem auto;
+    }
+    .div_mangas{
+        flex-direction: column;
+        align-items: center;
+    }
+    .div_mangas img{
+        width: 90%;
+    }
+
 }
